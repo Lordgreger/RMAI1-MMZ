@@ -1,0 +1,14 @@
+task main() {
+
+}
+
+void motorR(char power) {
+
+    if (power > 100)
+        power = 100;
+
+    if (power < -100)
+        power = -100;
+
+    OnFwd(OUT_A, power);
+}
