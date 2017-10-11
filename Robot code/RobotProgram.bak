@@ -1,0 +1,78 @@
+// Sensor reading
+bool readR();
+bool readL();
+
+// Motor control
+void motorR(char power);
+void motorL(char power);
+
+task main() {
+    while(true) {
+    
+        // Test for sensor
+        if (readR()) {
+            motorR(100);
+        }
+        else {
+            motorR(0);
+        }
+           
+    }
+}
+
+void setup() {
+    SetSensor(S1, SENSOR_LIGHT);
+    SetSensor(S2, SENSOR_LIGHT);
+}
+
+void motorR(char power) {
+
+    // Clamping value
+    if (power > 100)
+        power = 100;
+
+    if (power < -100)
+        power = -100;
+
+    // Setting motor speed
+    if (power = 0)
+        Off(OUT_A);
+    else if (power < 0)
+        OnRev(OUT_A, power);
+    else
+        OnFwd(OUT_A, power);
+}
+
+void motorL(char power) {
+
+    // Clamping value
+    if (power > 100)
+        power = 100;
+
+    if (power < -100)
+        power = -100;
+
+    // Setting motor speed
+    if (power = 0)
+        Off(OUT_B);
+    else if (power < 0)
+        OnRev(OUT_B, power);
+    else
+        OnFwd(OUT_B, power);
+}
+
+bool readR() {
+    int value = Sensor(S1);
+
+    if (value < 50)
+        return false;
+    return true;
+}
+
+bool readL() {
+    int value = Sensor(S1);
+
+    if (value < 50)
+        return false;
+    return true;
+}

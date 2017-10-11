@@ -1,0 +1,181 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0readR	6	1	0	4	3
+1	__D0motorR	6	1	4	4	15
+2	__DU0main	5	1	8	4	2
+3	__signed_stack_001readR	6	1	12	4	2
+4	__signed_stack_001motorR	6	1	16	4	6
+5	__DU0readR	5	1	20	4	3
+6	__OnRevMutex	9	0	24	4	2
+7	__D0main	6	1	28	4	2
+8	__readR_7qG2_value_7qG2_000	4	1	32	2	2
+9	____initialize_global_data_return	1	1	34	1	3
+10	__motorR_7qG2_power_7qG2_000	2	1	35	1	10
+11	__readR_return	1	1	36	1	5
+12	__constVal63	2	0	37	1	3
+13	__constVal96	2	0	38	1	3
+14	__motorR_return	1	1	39	1	4
+15	__zfmotorR	1	1	40	1	11
+16	__constVal3	2	0	41	1	3
+17	__zfmain	1	1	42	1	4
+18	__constVal0	2	1	43	1	15
+19	__OnRev_Tmp	2	1	44	1	2
+20	__zfreadR	1	1	45	1	3
+21	__constVal32	2	0	46	1	9
+#SOURCES
+Clump	Line	PC	Source
+0	9	0	#line 9 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	10	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	9	2	#line 9 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	9	2	#line 9 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	10	2		set __D0main, 1
+0	12	5	#line 12 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	13	5		tst 5, __zfmain, __D0main
+0	12	8	#line 12 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	13	8		brtst 4, __NXC_Label_605, __zfmain
+0	12	11	#line 12 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	13	11		subcall readR, __readR_return
+0	12	13	#line 12 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	13	13		mov __DU0main, __DU0readR
+0	13	15	#line 13 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	14	15		tst 5, __zfmain, __DU0main
+0	13	18	#line 13 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	14	18		brtst 4, __NXC_Label_610, __zfmain
+0	13	21	#line 13 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	14	21		set __motorR_7qG2_power_7qG2_000, 100
+0	13	24	#line 13 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	14	24	#line 14 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	15	24		subcall motorR, __motorR_return
+0	14	26	#line 14 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	16	26	#line 16 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	17	26		jmp __NXC_Label_613
+0	16	28	#line 16 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	17	28		set __motorR_7qG2_power_7qG2_000, 0
+0	16	31	#line 16 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	17	31	#line 17 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	18	31		subcall motorR, __motorR_return
+0	17	33	#line 17 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	20	33	#line 20 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	22	33	#line 22 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	23	33		jmp __NXC_Label_604
+0	22	35	#line 22 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+0	23	35		exit -1, -1
+1	30	0	#line 30 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	31	0		mov __signed_stack_001motorR, __motorR_7qG2_power_7qG2_000
+1	30	2	#line 30 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	31	2	#line 31 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	32	2		set __D0motorR, 100
+1	31	5	#line 31 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	32	5		cmp 1, __zfmotorR, __signed_stack_001motorR, __D0motorR
+1	31	9	#line 31 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	32	9		mov __D0motorR, __zfmotorR
+1	31	11	#line 31 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	32	11		brtst 4, __NXC_Label_622, __zfmotorR
+1	33	14	#line 33 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	34	14		set __motorR_7qG2_power_7qG2_000, 100
+1	33	17	#line 33 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	33	17	#line 33 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	33	17	#line 33 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	33	17	#line 33 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	34	17		mov __signed_stack_001motorR, __motorR_7qG2_power_7qG2_000
+1	33	19	#line 33 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	34	19	#line 34 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	35	19		set __D0motorR, -100
+1	34	22	#line 34 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	35	22		cmp 0, __zfmotorR, __signed_stack_001motorR, __D0motorR
+1	34	26	#line 34 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	35	26		mov __D0motorR, __zfmotorR
+1	34	28	#line 34 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	35	28		brtst 4, __NXC_Label_627, __zfmotorR
+1	37	31	#line 37 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	38	31		set __motorR_7qG2_power_7qG2_000, -100
+1	37	34	#line 37 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	37	34	#line 37 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	37	34	#line 37 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	38	34	#line 38 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	39	34		set __motorR_7qG2_power_7qG2_000, 0
+1	38	37	#line 38 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	38	37	#line 38 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	39	37		mov __D0motorR, __constVal0
+1	38	39	#line 38 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	39	39		tst 5, __zfmotorR, __D0motorR
+1	38	42	#line 38 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	39	42		brtst 4, __NXC_Label_634, __zfmotorR
+1	39	45	#line 39 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	40	45	#pragma macro 7
+1	40	45		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	6334	68	#line 6334 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	39	68	#line 39 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	39	68	#line 39 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	40	68		jmp __NXC_Label_635
+1	39	70	#line 39 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	40	70		mov __signed_stack_001motorR, __motorR_7qG2_power_7qG2_000
+1	39	72	#line 39 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	40	72	#line 40 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	41	72		set __D0motorR, 0
+1	40	75	#line 40 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	41	75		cmp 0, __zfmotorR, __signed_stack_001motorR, __D0motorR
+1	40	79	#line 40 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	41	79		mov __D0motorR, __zfmotorR
+1	40	81	#line 40 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	41	81		brtst 4, __NXC_Label_638, __zfmotorR
+1	40	84	#line 40 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	41	84		mov __D0motorR, __motorR_7qG2_power_7qG2_000
+1	41	86	#line 41 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	42	86	#pragma macro 10
+1	42	86		acquire __OnRevMutex
+1	42	87		neg __OnRev_Tmp, __D0motorR
+1	42	90		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	42	113		release __OnRevMutex
+1	6358	114	#line 6358 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	41	114	#line 41 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	42	114	#line 42 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	43	114		jmp __NXC_Label_641
+1	42	116	#line 42 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	43	116		mov __D0motorR, __motorR_7qG2_power_7qG2_000
+1	43	118	#line 43 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	44	118	#pragma macro 7
+1	44	118		setout __constVal0, 2, __D0motorR, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	6368	141	#line 6368 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	43	141	#line 43 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	43	141	#line 43 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	43	141	#line 43 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	45	141	#line 45 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+1	46	141		subret __motorR_return
+2	64	0	#line 64 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	65	0		getin __readR_7qG2_value_7qG2_000, __constVal0, 4
+2	64	4	#line 64 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	66	4	#line 66 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	67	4		mov __signed_stack_001readR, __readR_7qG2_value_7qG2_000
+2	66	6	#line 66 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	67	6	#line 67 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	68	6		set __D0readR, 50
+2	67	9	#line 67 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	68	9		cmp 0, __zfreadR, __signed_stack_001readR, __D0readR
+2	67	13	#line 67 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	68	13		mov __D0readR, __zfreadR
+2	67	15	#line 67 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	68	15		brtst 4, __NXC_Label_672, __zfreadR
+2	68	18	#line 68 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	69	18		set __DU0readR, 0
+2	68	21	#line 68 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	68	21	#line 68 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	69	21		subret __readR_return
+2	68	23	#line 68 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	68	23	#line 68 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	69	23	#line 69 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	70	23		set __DU0readR, 1
+2	69	26	#line 69 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	69	26	#line 69 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	70	26		subret __readR_return
+2	69	28	#line 69 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	71	28	#line 71 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+2	72	28		subret __readR_return
+3	72	0	#line 72 "C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc"
+3	73	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc
+1	motorR	38	C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc
+2	readR	181	C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc
+3	__initialize_global_data	211	C:\Users\BLACK_~1\AppData\Local\Temp\temp.nxc
