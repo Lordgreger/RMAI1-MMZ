@@ -7,11 +7,12 @@ void motorR(char power);
 void motorL(char power);
 
 task main() {
+    setup();
     while(true) {
     
         // Test for sensor
         if (readR()) {
-            motorR(100);
+            motorR(50);
         }
         else {
             motorR(0);
@@ -21,7 +22,10 @@ task main() {
 }
 
 void setup() {
+    // Set sensorR to be light sensor
     SetSensor(S1, SENSOR_LIGHT);
+    
+    // Set sensorL to be light sensor
     SetSensor(S2, SENSOR_LIGHT);
 }
 
