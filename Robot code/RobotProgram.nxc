@@ -1,23 +1,63 @@
+// Setup
+void setup();
+
 // Sensor reading
-bool readR();
+bool readR(); // Returns true if sensor is on black
 bool readL();
 
 // Motor control
 void motorR(char power);
 void motorL(char power);
+void goStraight(char power);
+void turnR(char power);
+
+// Line following;
+void followLine(char powerW, char powerB);
 
 task main() {
-    setup();
-    while(true) {
+    // Values
+    int state = 0;
+    int counter1 = 0;
     
-        // Test for sensor
-        if (readR()) {
-            motorR(50);
+    while(true) {
+
+        switch(state) {
+
+                case 0: // Setup state (Never go to this)
+                        setup();
+                        state = 1;
+                        break;
+
+                case 1: // Follow line state
+                        followLine(80, 10);
+                        if (readR() && readL()) {
+                            counter1 = 200; // Used for the step
+                            state = 11;
+                        }
+                        break;
+
+                case 11: // Take small step forward
+                        counter1 = counter1 - 1;
+                        goStraight(80);
+                        if (counter1 < 1) {
+                            state = 987;
+                        }
+                        break;
+                        
+                case 2:
+                        turnR(30);
+                        //if (readR()) {
+                            //state = 987;
+                        //}
+
+                case 987: // Stop
+                        goStraight(0);
+                        break;
+
+                default:
+                        // Do this when state is not found
+                        break;
         }
-        else {
-            motorR(0);
-        }
-           
     }
 }
 
@@ -27,6 +67,26 @@ void setup() {
     
     // Set sensorL to be light sensor
     SetSensor(S2, SENSOR_LIGHT);
+}
+
+void followLine(char powerW, char powerB) {
+
+        // motorR
+        if (readR()) {
+            motorR(powerB);
+        }
+        else {
+            motorR(powerW);
+        }
+
+        // motorL
+        if (readL()) {
+            motorL(powerB);
+        }
+        else {
+            motorL(powerW);
+        }
+        
 }
 
 void motorR(char power) {
@@ -39,7 +99,7 @@ void motorR(char power) {
         power = -100;
 
     // Setting motor speed
-    if (power = 0)
+    if (power == 0)
         Off(OUT_A);
     else if (power < 0)
         OnRev(OUT_A, power);
@@ -57,7 +117,7 @@ void motorL(char power) {
         power = -100;
 
     // Setting motor speed
-    if (power = 0)
+    if (power == 0)
         Off(OUT_B);
     else if (power < 0)
         OnRev(OUT_B, power);
@@ -65,10 +125,20 @@ void motorL(char power) {
         OnFwd(OUT_B, power);
 }
 
+void goStraight(char power) {
+    motorR(power);
+    motorL(power);
+}
+
+void turnR(char power) {
+    motorR(-power);
+    motorL(power);
+}
+
 bool readR() {
     int value = Sensor(S1);
 
-    if (value < 50)
+    if (value > 25)
         return false;
     return true;
 }
@@ -76,7 +146,7 @@ bool readR() {
 bool readL() {
     int value = Sensor(S2);
 
-    if (value < 50)
+    if (value > 25)
         return false;
     return true;
 }
