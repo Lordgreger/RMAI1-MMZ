@@ -1,62 +1,67 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0motorR	6	1	0	4	16
-1	__D0readL	6	1	4	4	3
-2	__DU0readL	5	1	8	4	4
-3	__D0main	6	1	12	4	15
+0	__DU0readL	5	1	0	4	4
+1	__D0readR	6	1	4	4	3
+2	__DU0readR	5	1	8	4	5
+3	__D0readL	6	1	12	4	3
 4	__DU0main	5	1	16	4	6
 5	__D0motorL	6	1	20	4	16
-6	__D0readR	6	1	24	4	3
-7	__signed_stack_001motorR	6	1	28	4	8
+6	__D0motorR	6	1	24	4	16
+7	__unsigned_stack_001motorR	5	1	28	4	2
 8	__signed_stack_001readL	6	1	32	4	2
 9	__signed_stack_001readR	6	1	36	4	2
-10	__DU0readR	5	1	40	4	5
-11	__signed_stack_001main	6	1	44	4	4
-12	__signed_stack_001motorL	6	1	48	4	8
-13	__DU0followLine	5	1	52	4	4
-14	__OnRevMutex	9	0	56	4	4
-15	__constVal896	4	0	60	2	2
-16	__main_7qG2_counter1_7qG2_000	4	1	62	2	5
-17	__constVal987	4	0	64	2	1
-18	__SetSensor_7qG2_config_7qG2_000_inline_setup	3	1	66	2	2
-19	__main_7qG2_state_7qG2_000	4	1	68	2	6
-20	__constVal128	4	0	70	2	2
-21	__readL_7qG2_value_7qG2_000	4	1	72	2	2
-22	__readR_7qG2_value_7qG2_000	4	1	74	2	2
-23	__setup_return	1	1	76	1	3
-24	__followLine_return	1	1	77	1	3
-25	__followLine_7qG2_powerB_7qG2_000	2	1	78	1	3
-26	____initialize_global_data_return	1	1	79	1	3
-27	__readR_return	1	1	80	1	7
-28	__motorL_return	1	1	81	1	6
-29	__motorR_return	1	1	82	1	6
-30	__constVal63	2	0	83	1	6
-31	__constVal96	2	0	84	1	6
-32	__goStraight_return	1	1	85	1	4
-33	__readL_return	1	1	86	1	6
-34	__SetSensor_7qG2_port_7qG2_000_inline_setup	1	1	87	1	8
-35	__turnR_return	1	1	88	1	3
-36	__followLine_7qG2_powerW_7qG2_000	2	1	89	1	3
-37	____ResetSensorSubroutine_return	1	1	90	1	4
-38	__zfmotorR	1	1	91	1	12
-39	__ResetSensorTmp	1	1	92	1	2
-40	__ResetSensorPort	1	1	93	1	4
-41	__zfreadL	1	1	94	1	3
-42	__zfmain	1	1	95	1	14
-43	__zffollowLine	1	1	96	1	4
-44	__constVal11	2	0	97	1	1
-45	__constVal2	2	0	98	1	1
-46	__zfmotorL	1	1	99	1	12
-47	__motorR_7qG2_power_7qG2_000	2	1	100	1	12
-48	__OnRev_Tmp	2	1	101	1	4
-49	__motorL_7qG2_power_7qG2_000	2	1	102	1	12
-50	__turnR_7qG2_power_7qG2_000	2	1	103	1	3
-51	__goStraight_7qG2_power_7qG2_000	2	1	104	1	4
-52	__zfreadR	1	1	105	1	3
-53	__constVal3	2	0	106	1	8
-54	__constVal0	2	1	107	1	26
-55	__constVal32	2	0	108	1	18
-56	__constVal1	2	0	109	1	7
+10	__signed_stack_001motorR	6	1	40	4	6
+11	__signed_stack_001main	6	1	44	4	6
+12	__signed_stack_001motorL	6	1	48	4	6
+13	__unsigned_stack_001motorL	5	1	52	4	2
+14	__DU0followLine	5	1	56	4	4
+15	__OnRevMutex	9	0	60	4	4
+16	__D0main	6	1	64	4	20
+17	__constVal896	4	0	68	2	2
+18	__main_7qG2_counter1_7qG2_000	4	1	70	2	9
+19	__constVal987	4	0	72	2	1
+20	__SetSensor_7qG2_config_7qG2_000_inline_setup	3	1	74	2	2
+21	__main_7qG2_state_7qG2_000	4	1	76	2	7
+22	__readR_7qG2_value_7qG2_000	4	1	78	2	2
+23	__readL_7qG2_value_7qG2_000	4	1	80	2	2
+24	__constVal128	4	0	82	2	2
+25	__setup_return	1	1	84	1	3
+26	__constVal33	2	0	85	1	1
+27	____initialize_global_data_return	1	1	86	1	3
+28	__followLine_7qG2_powerB_7qG2_000	2	1	87	1	3
+29	__constVal22	2	0	88	1	1
+30	__followLine_return	1	1	89	1	3
+31	__motorL_return	1	1	90	1	6
+32	__motorR_return	1	1	91	1	6
+33	__constVal63	2	0	92	1	6
+34	__constVal96	2	0	93	1	6
+35	__SetSensor_7qG2_port_7qG2_000_inline_setup	1	1	94	1	8
+36	__readL_return	1	1	95	1	6
+37	__readR_return	1	1	96	1	7
+38	__turnR_return	1	1	97	1	3
+39	__goStraight_return	1	1	98	1	4
+40	__ResetSensorTmp	1	1	99	1	2
+41	____ResetSensorSubroutine_return	1	1	100	1	4
+42	__zfreadR	1	1	101	1	3
+43	__constVal3	2	0	102	1	9
+44	__ResetSensorPort	1	1	103	1	4
+45	__zfreadL	1	1	104	1	3
+46	__zffollowLine	1	1	105	1	4
+47	__zfmain	1	1	106	1	17
+48	__zfmotorL	1	1	107	1	12
+49	__constVal2	2	0	108	1	1
+50	__zfmotorR	1	1	109	1	12
+51	__motorL_7qG2_dir_7qG2_000	1	1	110	1	5
+52	__motorL_7qG2_power_7qG2_000	2	1	111	1	11
+53	__goStraight_7qG2_power_7qG2_000	2	1	112	1	4
+54	__followLine_7qG2_powerW_7qG2_000	2	1	113	1	3
+55	__turnR_7qG2_power_7qG2_000	2	1	114	1	3
+56	__motorR_7qG2_dir_7qG2_000	1	1	115	1	5
+57	__constVal1	2	0	116	1	15
+58	__constVal0	2	1	117	1	25
+59	__constVal32	2	0	118	1	18
+60	__motorR_7qG2_power_7qG2_000	2	1	119	1	11
+61	__OnRev_Tmp	2	1	120	1	4
 #SOURCES
 Clump	Line	PC	Source
 0	18	0	#line 18 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
@@ -65,504 +70,559 @@ Clump	Line	PC	Source
 0	19	2	#line 19 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
 0	20	2		set __main_7qG2_state_7qG2_000, 0
 0	19	5	#line 19 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	21	5	#line 21 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	22	5		set __main_7qG2_counter1_7qG2_000, 0
-0	21	8	#line 21 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	21	8	#line 21 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	22	8		set __D0main, 1
-0	23	11	#line 23 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	24	11		tst 5, __zfmain, __D0main
-0	23	14	#line 23 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	24	14		brtst 4, __NXC_Label_609, __zfmain
-0	23	17	#line 23 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	24	17		mov __D0main, __main_7qG2_state_7qG2_000
-0	27	19		brcmp 4, __NXC_Label_615, __constVal0, __D0main
-0	28	23		brcmp 4, __NXC_Label_618, __constVal1, __D0main
-0	29	27		brcmp 4, __NXC_Label_630, __constVal11, __D0main
-0	30	31		brcmp 4, __NXC_Label_640, __constVal2, __D0main
-0	31	35		brcmp 4, __NXC_Label_648, __constVal987, __D0main
-0	32	39		jmp __NXC_Label_651
-0	33	41		jmp __NXC_Label_614
-0	26	43	#line 26 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	27	43	#line 27 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	28	43		subcall setup, __setup_return
-0	27	45	#line 27 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	28	45	#line 28 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	29	45		set __main_7qG2_state_7qG2_000, 1
-0	28	48	#line 28 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	28	48	#line 28 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	30	48	#line 30 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	31	48		jmp __NXC_Label_614
-0	30	50	#line 30 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	31	50	#line 31 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	31	50	#line 31 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	32	50		set __followLine_7qG2_powerW_7qG2_000, 80
-0	31	53	#line 31 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	31	53	#line 31 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	32	53		set __followLine_7qG2_powerB_7qG2_000, 10
+0	20	5	#line 20 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	21	5		set __main_7qG2_counter1_7qG2_000, 0
+0	20	8	#line 20 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	22	8	#line 22 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	22	8	#line 22 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	23	8		set __D0main, 1
+0	24	11	#line 24 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	25	11		tst 5, __zfmain, __D0main
+0	24	14	#line 24 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	25	14		brtst 4, __NXC_Label_609, __zfmain
+0	24	17	#line 24 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	25	17		mov __D0main, __main_7qG2_state_7qG2_000
+0	28	19		brcmp 4, __NXC_Label_615, __constVal0, __D0main
+0	29	23		brcmp 4, __NXC_Label_618, __constVal1, __D0main
+0	30	27		brcmp 4, __NXC_Label_619, __constVal2, __D0main
+0	31	31		brcmp 4, __NXC_Label_631, __constVal22, __D0main
+0	32	35		brcmp 4, __NXC_Label_641, __constVal3, __D0main
+0	33	39		brcmp 4, __NXC_Label_651, __constVal33, __D0main
+0	34	43		brcmp 4, __NXC_Label_659, __constVal987, __D0main
+0	35	47		jmp __NXC_Label_662
+0	36	49		jmp __NXC_Label_614
+0	27	51	#line 27 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	28	51	#line 28 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	29	51		subcall setup, __setup_return
+0	28	53	#line 28 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	29	53	#line 29 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	30	53		set __main_7qG2_state_7qG2_000, 2
+0	29	56	#line 29 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	29	56	#line 29 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
 0	31	56	#line 31 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	32	56	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	56		subcall followLine, __followLine_return
+0	32	56		jmp __NXC_Label_614
+0	31	58	#line 31 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
 0	32	58	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	32	58	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	58		subcall readR, __readR_return
-0	32	60	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	60		mov __DU0main, __DU0readR
-0	32	62	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	62		tst 5, __zfmain, __DU0main
-0	32	65	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	65		mov __D0main, __zfmain
-0	32	67	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	67		brtst 4, __NXC_Label_624, __zfmain
-0	32	70	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	70		mov __signed_stack_001main, __D0main
-0	32	72	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	72		subcall readL, __readL_return
-0	32	74	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	74		mov __DU0main, __DU0readL
-0	32	76	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	76		tst 5, __zfmain, __DU0main
-0	32	79	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	32	79	#line 32 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	33	79		and __D0main, __signed_stack_001main, __zfmain
-0	33	83	#line 33 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	34	83		tst 5, __zfmain, __D0main
-0	33	86	#line 33 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	34	86		brtst 4, __NXC_Label_625, __zfmain
-0	34	89	#line 34 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	35	89		set __main_7qG2_counter1_7qG2_000, 200
-0	34	92	#line 34 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	34	92	#line 34 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	35	92	#line 35 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	36	92		set __main_7qG2_state_7qG2_000, 11
-0	35	95	#line 35 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	35	95	#line 35 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	36	95	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	38	95	#line 38 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	39	95		jmp __NXC_Label_614
-0	38	97	#line 38 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	39	97	#line 39 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	39	97	#line 39 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	39	97	#line 39 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	40	97	#line 40 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	40	97	#line 40 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	41	97		sub __main_7qG2_counter1_7qG2_000, __main_7qG2_counter1_7qG2_000, __constVal1
-0	40	101	#line 40 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	40	101	#line 40 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	40	101	#line 40 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	41	101		set __goStraight_7qG2_power_7qG2_000, 80
-0	40	104	#line 40 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	41	104	#line 41 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	42	104		subcall goStraight, __goStraight_return
-0	41	106	#line 41 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	41	106	#line 41 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	42	106		mov __signed_stack_001main, __main_7qG2_counter1_7qG2_000
-0	41	108	#line 41 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	41	108	#line 41 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	42	108		set __D0main, 1
-0	41	111	#line 41 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	42	111		cmp 0, __zfmain, __signed_stack_001main, __D0main
-0	41	115	#line 41 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	42	115		mov __D0main, __zfmain
-0	42	117	#line 42 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	43	117		brtst 4, __NXC_Label_637, __zfmain
-0	43	120	#line 43 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	44	120		set __main_7qG2_state_7qG2_000, 987
-0	43	123	#line 43 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	43	123	#line 43 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	44	123	#line 44 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	46	123	#line 46 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	47	123		jmp __NXC_Label_614
-0	46	125	#line 46 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	47	125	#line 47 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	47	125	#line 47 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	48	125		set __turnR_7qG2_power_7qG2_000, 30
-0	47	128	#line 47 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	48	128	#line 48 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	49	128		subcall turnR, __turnR_return
-0	48	130	#line 48 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	48	130	#line 48 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	49	130		subcall readR, __readR_return
-0	48	132	#line 48 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	49	132		mov __DU0main, __DU0readR
-0	49	134	#line 49 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	50	134		tst 5, __zfmain, __DU0main
-0	49	137	#line 49 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	50	137		brtst 4, __NXC_Label_645, __zfmain
-0	50	140	#line 50 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	51	140		set __main_7qG2_state_7qG2_000, 987
-0	50	143	#line 50 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	50	143	#line 50 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	52	143	#line 52 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	53	143	#line 53 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	53	143	#line 53 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	54	143		set __goStraight_7qG2_power_7qG2_000, 0
-0	53	146	#line 53 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	54	146	#line 54 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	55	146		subcall goStraight, __goStraight_return
-0	54	148	#line 54 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	56	148	#line 56 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	57	148		jmp __NXC_Label_614
-0	56	150	#line 56 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	58	150	#line 58 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	59	150	#line 59 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	59	150	#line 59 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	61	150	#line 61 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	63	150	#line 63 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	64	150		jmp __NXC_Label_608
-0	63	152	#line 63 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-0	64	152		exit -1, -1
+0	34	58	#line 34 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	35	58		jmp __NXC_Label_614
+0	34	60	#line 34 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	35	60	#line 35 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	35	60	#line 35 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	36	60		set __followLine_7qG2_powerW_7qG2_000, 100
+0	35	63	#line 35 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	35	63	#line 35 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	36	63		set __followLine_7qG2_powerB_7qG2_000, 20
+0	35	66	#line 35 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	36	66	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	66		subcall followLine, __followLine_return
+0	36	68	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	36	68	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	68		subcall readR, __readR_return
+0	36	70	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	70		mov __DU0main, __DU0readR
+0	36	72	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	72		tst 5, __zfmain, __DU0main
+0	36	75	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	75		mov __D0main, __zfmain
+0	36	77	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	77		brtst 4, __NXC_Label_625, __zfmain
+0	36	80	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	80		mov __signed_stack_001main, __D0main
+0	36	82	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	82		subcall readL, __readL_return
+0	36	84	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	84		mov __DU0main, __DU0readL
+0	36	86	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	86		tst 5, __zfmain, __DU0main
+0	36	89	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	36	89	#line 36 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	37	89		and __D0main, __signed_stack_001main, __zfmain
+0	37	93	#line 37 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	38	93		tst 5, __zfmain, __D0main
+0	37	96	#line 37 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	38	96		brtst 4, __NXC_Label_626, __zfmain
+0	38	99	#line 38 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	39	99		set __main_7qG2_counter1_7qG2_000, 100
+0	38	102	#line 38 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	38	102	#line 38 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	39	102	#line 39 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	40	102		set __main_7qG2_state_7qG2_000, 22
+0	39	105	#line 39 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	39	105	#line 39 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	40	105	#line 40 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	42	105	#line 42 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	43	105		jmp __NXC_Label_614
+0	42	107	#line 42 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	43	107	#line 43 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	43	107	#line 43 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	43	107	#line 43 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	44	107	#line 44 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	44	107	#line 44 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	45	107		sub __main_7qG2_counter1_7qG2_000, __main_7qG2_counter1_7qG2_000, __constVal1
+0	44	111	#line 44 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	44	111	#line 44 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	44	111	#line 44 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	45	111		set __goStraight_7qG2_power_7qG2_000, 100
+0	44	114	#line 44 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	45	114	#line 45 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	46	114		subcall goStraight, __goStraight_return
+0	45	116	#line 45 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	45	116	#line 45 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	46	116		mov __signed_stack_001main, __main_7qG2_counter1_7qG2_000
+0	45	118	#line 45 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	45	118	#line 45 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	46	118		set __D0main, 1
+0	45	121	#line 45 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	46	121		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	45	125	#line 45 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	46	125		mov __D0main, __zfmain
+0	46	127	#line 46 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	47	127		brtst 4, __NXC_Label_638, __zfmain
+0	47	130	#line 47 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	48	130		set __main_7qG2_state_7qG2_000, 3
+0	47	133	#line 47 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	47	133	#line 47 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	48	133	#line 48 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	50	133	#line 50 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	51	133		jmp __NXC_Label_614
+0	50	135	#line 50 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	51	135	#line 51 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	51	135	#line 51 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	52	135		set __turnR_7qG2_power_7qG2_000, 100
+0	51	138	#line 51 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	52	138	#line 52 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	53	138		subcall turnR, __turnR_return
+0	52	140	#line 52 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	52	140	#line 52 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	53	140		subcall readR, __readR_return
+0	52	142	#line 52 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	53	142		mov __DU0main, __DU0readR
+0	53	144	#line 53 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	54	144		tst 5, __zfmain, __DU0main
+0	53	147	#line 53 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	54	147		brtst 4, __NXC_Label_646, __zfmain
+0	54	150	#line 54 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	55	150		set __main_7qG2_counter1_7qG2_000, 500
+0	54	153	#line 54 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	54	153	#line 54 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	55	153	#line 55 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	56	153		set __main_7qG2_state_7qG2_000, 33
+0	55	156	#line 55 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	55	156	#line 55 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	56	156	#line 56 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	58	156	#line 58 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	59	156		jmp __NXC_Label_614
+0	58	158	#line 58 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	59	158	#line 59 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	59	158	#line 59 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	59	158	#line 59 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	60	158	#line 60 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	60	158	#line 60 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	61	158		sub __main_7qG2_counter1_7qG2_000, __main_7qG2_counter1_7qG2_000, __constVal1
+0	60	162	#line 60 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	60	162	#line 60 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	60	162	#line 60 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	61	162		mov __signed_stack_001main, __main_7qG2_counter1_7qG2_000
+0	60	164	#line 60 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	60	164	#line 60 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	61	164		set __D0main, 1
+0	60	167	#line 60 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	61	167		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	60	171	#line 60 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	61	171		mov __D0main, __zfmain
+0	61	173	#line 61 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	62	173		brtst 4, __NXC_Label_656, __zfmain
+0	62	176	#line 62 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	63	176		set __main_7qG2_state_7qG2_000, 987
+0	62	179	#line 62 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	62	179	#line 62 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	63	179	#line 63 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	65	179	#line 65 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	66	179		jmp __NXC_Label_614
+0	65	181	#line 65 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	66	181	#line 66 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	66	181	#line 66 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	67	181		set __goStraight_7qG2_power_7qG2_000, 0
+0	66	184	#line 66 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	67	184	#line 67 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	68	184		subcall goStraight, __goStraight_return
+0	67	186	#line 67 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	69	186	#line 69 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	70	186		jmp __NXC_Label_614
+0	69	188	#line 69 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	71	188	#line 71 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	72	188	#line 72 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	72	188	#line 72 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	74	188	#line 74 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	76	188	#line 76 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	77	188		jmp __NXC_Label_608
+0	76	190	#line 76 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+0	77	190		exit -1, -1
 1	4885	0		setin __constVal1, __ResetSensorPort, 5
 1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	4889	11		subret ____ResetSensorSubroutine_return
-2	65	0	#line 65 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-2	66	0		set __SetSensor_7qG2_port_7qG2_000_inline_setup, 0
-2	65	3	#line 65 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-2	65	3	#line 65 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-2	66	3		mov __SetSensor_7qG2_config_7qG2_000_inline_setup, __constVal896
+2	78	0	#line 78 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+2	79	0		set __SetSensor_7qG2_port_7qG2_000_inline_setup, 0
+2	78	3	#line 78 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+2	78	3	#line 78 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+2	79	3		mov __SetSensor_7qG2_config_7qG2_000_inline_setup, __constVal896
 2	3707	5	#line 3707 "NXCDefs.h"
 2	3708	5		setin __constVal3, __SetSensor_7qG2_port_7qG2_000_inline_setup, 0
 2	3709	9		setin __constVal128, __SetSensor_7qG2_port_7qG2_000_inline_setup, 1
 2	3710	13	#pragma macro 4
 2	3710	13		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_setup
 2	3710	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-2	6679	17	#line 6679 "NXCDefs.h"
+2	6751	17	#line 6751 "NXCDefs.h"
 2	3711	17	#line 3711 "NXCDefs.h"
-2	68	17	#line 68 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-2	68	17	#line 68 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-2	69	17		set __SetSensor_7qG2_port_7qG2_000_inline_setup, 1
-2	68	20	#line 68 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-2	68	20	#line 68 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-2	69	20		mov __SetSensor_7qG2_config_7qG2_000_inline_setup, __constVal896
+2	81	17	#line 81 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+2	81	17	#line 81 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+2	82	17		set __SetSensor_7qG2_port_7qG2_000_inline_setup, 1
+2	81	20	#line 81 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+2	81	20	#line 81 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+2	82	20		mov __SetSensor_7qG2_config_7qG2_000_inline_setup, __constVal896
 2	3707	22	#line 3707 "NXCDefs.h"
 2	3708	22		setin __constVal3, __SetSensor_7qG2_port_7qG2_000_inline_setup, 0
 2	3709	26		setin __constVal128, __SetSensor_7qG2_port_7qG2_000_inline_setup, 1
 2	3710	30	#pragma macro 4
 2	3710	30		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_setup
 2	3710	32		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-2	6693	34	#line 6693 "NXCDefs.h"
+2	6765	34	#line 6765 "NXCDefs.h"
 2	3711	34	#line 3711 "NXCDefs.h"
-2	69	34	#line 69 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-2	71	34	#line 71 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-2	72	34		subret __setup_return
-3	74	0	#line 74 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	75	0		subcall readR, __readR_return
-3	74	2	#line 74 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	75	2		mov __DU0followLine, __DU0readR
-3	75	4	#line 75 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	76	4		tst 5, __zffollowLine, __DU0followLine
-3	75	7	#line 75 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	76	7		brtst 4, __NXC_Label_658, __zffollowLine
-3	75	10	#line 75 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	76	10		mov __motorR_7qG2_power_7qG2_000, __followLine_7qG2_powerB_7qG2_000
-3	75	12	#line 75 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	76	12	#line 76 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	77	12		subcall motorR, __motorR_return
-3	76	14	#line 76 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	78	14	#line 78 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	79	14		jmp __NXC_Label_661
-3	78	16	#line 78 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	79	16		mov __motorR_7qG2_power_7qG2_000, __followLine_7qG2_powerW_7qG2_000
-3	78	18	#line 78 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	79	18	#line 79 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	80	18		subcall motorR, __motorR_return
-3	79	20	#line 79 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	82	20	#line 82 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	82	20	#line 82 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	83	20		subcall readL, __readL_return
-3	82	22	#line 82 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	83	22		mov __DU0followLine, __DU0readL
-3	83	24	#line 83 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	84	24		tst 5, __zffollowLine, __DU0followLine
-3	83	27	#line 83 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	84	27		brtst 4, __NXC_Label_666, __zffollowLine
-3	83	30	#line 83 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	84	30		mov __motorL_7qG2_power_7qG2_000, __followLine_7qG2_powerB_7qG2_000
-3	83	32	#line 83 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	84	32	#line 84 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	85	32		subcall motorL, __motorL_return
-3	84	34	#line 84 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	86	34	#line 86 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	87	34		jmp __NXC_Label_669
-3	86	36	#line 86 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	87	36		mov __motorL_7qG2_power_7qG2_000, __followLine_7qG2_powerW_7qG2_000
-3	86	38	#line 86 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	87	38	#line 87 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	88	38		subcall motorL, __motorL_return
-3	87	40	#line 87 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	91	40	#line 91 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	91	40	#line 91 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-3	92	40		subret __followLine_return
-4	94	0	#line 94 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	95	0		mov __signed_stack_001motorR, __motorR_7qG2_power_7qG2_000
-4	94	2	#line 94 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	95	2	#line 95 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	96	2		set __D0motorR, 100
-4	95	5	#line 95 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	96	5		cmp 1, __zfmotorR, __signed_stack_001motorR, __D0motorR
-4	95	9	#line 95 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	96	9		mov __D0motorR, __zfmotorR
-4	95	11	#line 95 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	96	11		brtst 4, __NXC_Label_674, __zfmotorR
-4	97	14	#line 97 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	98	14		set __motorR_7qG2_power_7qG2_000, 100
-4	97	17	#line 97 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	97	17	#line 97 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	97	17	#line 97 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	97	17	#line 97 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	98	17		mov __signed_stack_001motorR, __motorR_7qG2_power_7qG2_000
-4	97	19	#line 97 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	98	19	#line 98 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	99	19		set __D0motorR, -100
-4	98	22	#line 98 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	99	22		cmp 0, __zfmotorR, __signed_stack_001motorR, __D0motorR
-4	98	26	#line 98 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	99	26		mov __D0motorR, __zfmotorR
-4	98	28	#line 98 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	99	28		brtst 4, __NXC_Label_679, __zfmotorR
-4	101	31	#line 101 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	102	31		set __motorR_7qG2_power_7qG2_000, -100
-4	101	34	#line 101 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	101	34	#line 101 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	101	34	#line 101 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	101	34	#line 101 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	102	34		mov __signed_stack_001motorR, __motorR_7qG2_power_7qG2_000
-4	101	36	#line 101 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	102	36	#line 102 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	103	36		set __D0motorR, 0
-4	102	39	#line 102 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	103	39		cmp 4, __zfmotorR, __signed_stack_001motorR, __D0motorR
-4	102	43	#line 102 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	103	43		mov __D0motorR, __zfmotorR
-4	102	45	#line 102 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	103	45		brtst 4, __NXC_Label_684, __zfmotorR
-4	103	48	#line 103 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	104	48	#pragma macro 7
-4	104	48		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	6833	71	#line 6833 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	103	71	#line 103 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	103	71	#line 103 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	104	71		jmp __NXC_Label_685
-4	103	73	#line 103 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	104	73		mov __signed_stack_001motorR, __motorR_7qG2_power_7qG2_000
-4	103	75	#line 103 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	104	75	#line 104 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	105	75		set __D0motorR, 0
-4	104	78	#line 104 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	105	78		cmp 0, __zfmotorR, __signed_stack_001motorR, __D0motorR
-4	104	82	#line 104 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	105	82		mov __D0motorR, __zfmotorR
-4	104	84	#line 104 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	105	84		brtst 4, __NXC_Label_688, __zfmotorR
-4	104	87	#line 104 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	105	87		mov __D0motorR, __motorR_7qG2_power_7qG2_000
-4	105	89	#line 105 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	106	89	#pragma macro 10
-4	106	89		acquire __OnRevMutex
-4	106	90		neg __OnRev_Tmp, __D0motorR
-4	106	93		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	106	116		release __OnRevMutex
-4	6857	117	#line 6857 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	105	117	#line 105 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	106	117	#line 106 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	107	117		jmp __NXC_Label_691
-4	106	119	#line 106 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	107	119		mov __D0motorR, __motorR_7qG2_power_7qG2_000
-4	107	121	#line 107 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	108	121	#pragma macro 7
-4	108	121		setout __constVal0, 2, __D0motorR, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	6867	144	#line 6867 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	107	144	#line 107 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	107	144	#line 107 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	107	144	#line 107 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	109	144	#line 109 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-4	110	144		subret __motorR_return
-5	112	0	#line 112 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	113	0		mov __signed_stack_001motorL, __motorL_7qG2_power_7qG2_000
-5	112	2	#line 112 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	113	2	#line 113 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	114	2		set __D0motorL, 100
-5	113	5	#line 113 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	114	5		cmp 1, __zfmotorL, __signed_stack_001motorL, __D0motorL
-5	113	9	#line 113 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	114	9		mov __D0motorL, __zfmotorL
-5	113	11	#line 113 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	114	11		brtst 4, __NXC_Label_696, __zfmotorL
-5	115	14	#line 115 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	116	14		set __motorL_7qG2_power_7qG2_000, 100
-5	115	17	#line 115 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	115	17	#line 115 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	115	17	#line 115 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	115	17	#line 115 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	116	17		mov __signed_stack_001motorL, __motorL_7qG2_power_7qG2_000
-5	115	19	#line 115 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	116	19	#line 116 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	117	19		set __D0motorL, -100
-5	116	22	#line 116 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	117	22		cmp 0, __zfmotorL, __signed_stack_001motorL, __D0motorL
-5	116	26	#line 116 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	117	26		mov __D0motorL, __zfmotorL
-5	116	28	#line 116 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	117	28		brtst 4, __NXC_Label_701, __zfmotorL
-5	119	31	#line 119 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	120	31		set __motorL_7qG2_power_7qG2_000, -100
-5	119	34	#line 119 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	119	34	#line 119 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	119	34	#line 119 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	119	34	#line 119 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	120	34		mov __signed_stack_001motorL, __motorL_7qG2_power_7qG2_000
-5	119	36	#line 119 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	120	36	#line 120 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	121	36		set __D0motorL, 0
-5	120	39	#line 120 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	121	39		cmp 4, __zfmotorL, __signed_stack_001motorL, __D0motorL
-5	120	43	#line 120 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	121	43		mov __D0motorL, __zfmotorL
-5	120	45	#line 120 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	121	45		brtst 4, __NXC_Label_706, __zfmotorL
-5	121	48	#line 121 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	122	48	#pragma macro 7
-5	122	48		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	6939	71	#line 6939 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	121	71	#line 121 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	121	71	#line 121 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	122	71		jmp __NXC_Label_707
-5	121	73	#line 121 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	122	73		mov __signed_stack_001motorL, __motorL_7qG2_power_7qG2_000
-5	121	75	#line 121 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	122	75	#line 122 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	123	75		set __D0motorL, 0
-5	122	78	#line 122 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	123	78		cmp 0, __zfmotorL, __signed_stack_001motorL, __D0motorL
-5	122	82	#line 122 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	123	82		mov __D0motorL, __zfmotorL
-5	122	84	#line 122 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	123	84		brtst 4, __NXC_Label_710, __zfmotorL
-5	122	87	#line 122 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	123	87		mov __D0motorL, __motorL_7qG2_power_7qG2_000
-5	123	89	#line 123 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	124	89	#pragma macro 10
-5	124	89		acquire __OnRevMutex
-5	124	90		neg __OnRev_Tmp, __D0motorL
-5	124	93		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	124	116		release __OnRevMutex
-5	6963	117	#line 6963 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	123	117	#line 123 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	124	117	#line 124 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	125	117		jmp __NXC_Label_713
-5	124	119	#line 124 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	125	119		mov __D0motorL, __motorL_7qG2_power_7qG2_000
-5	125	121	#line 125 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	126	121	#pragma macro 7
-5	126	121		setout __constVal1, 2, __D0motorL, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	6973	144	#line 6973 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	125	144	#line 125 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	125	144	#line 125 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	125	144	#line 125 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	127	144	#line 127 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-5	128	144		subret __motorL_return
-6	128	0	#line 128 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-6	129	0		mov __motorR_7qG2_power_7qG2_000, __goStraight_7qG2_power_7qG2_000
-6	128	2	#line 128 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-6	129	2	#line 129 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-6	130	2		subcall motorR, __motorR_return
-6	129	4	#line 129 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-6	129	4	#line 129 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-6	130	4		mov __motorL_7qG2_power_7qG2_000, __goStraight_7qG2_power_7qG2_000
-6	129	6	#line 129 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-6	130	6	#line 130 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-6	131	6		subcall motorL, __motorL_return
-6	130	8	#line 130 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-6	132	8	#line 132 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-6	133	8		subret __goStraight_return
-7	133	0	#line 133 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	133	0	#line 133 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	133	0	#line 133 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	133	0	#line 133 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	134	0		sub __motorR_7qG2_power_7qG2_000, __constVal0, __turnR_7qG2_power_7qG2_000
-7	133	4	#line 133 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	134	4	#line 134 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	135	4		subcall motorR, __motorR_return
-7	134	6	#line 134 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	134	6	#line 134 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	135	6		mov __motorL_7qG2_power_7qG2_000, __turnR_7qG2_power_7qG2_000
-7	134	8	#line 134 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	135	8	#line 135 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	136	8		subcall motorL, __motorL_return
-7	135	10	#line 135 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	137	10	#line 137 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-7	138	10		subret __turnR_return
-8	138	0	#line 138 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	139	0		getin __readR_7qG2_value_7qG2_000, __constVal0, 4
-8	138	4	#line 138 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	140	4	#line 140 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	141	4		mov __signed_stack_001readR, __readR_7qG2_value_7qG2_000
-8	140	6	#line 140 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	141	6	#line 141 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	142	6		set __D0readR, 25
-8	141	9	#line 141 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	142	9		cmp 1, __zfreadR, __signed_stack_001readR, __D0readR
-8	141	13	#line 141 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	142	13		mov __D0readR, __zfreadR
-8	141	15	#line 141 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	142	15		brtst 4, __NXC_Label_728, __zfreadR
-8	142	18	#line 142 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	143	18		set __DU0readR, 0
-8	142	21	#line 142 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	142	21	#line 142 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	143	21		subret __readR_return
-8	142	23	#line 142 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	142	23	#line 142 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	143	23	#line 143 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	144	23		set __DU0readR, 1
-8	143	26	#line 143 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	143	26	#line 143 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	144	26		subret __readR_return
-8	143	28	#line 143 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	145	28	#line 145 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-8	146	28		subret __readR_return
-9	146	0	#line 146 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	147	0		getin __readL_7qG2_value_7qG2_000, __constVal1, 4
-9	146	4	#line 146 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	148	4	#line 148 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	149	4		mov __signed_stack_001readL, __readL_7qG2_value_7qG2_000
-9	148	6	#line 148 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	149	6	#line 149 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	150	6		set __D0readL, 25
-9	149	9	#line 149 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	150	9		cmp 1, __zfreadL, __signed_stack_001readL, __D0readL
-9	149	13	#line 149 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	150	13		mov __D0readL, __zfreadL
-9	149	15	#line 149 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	150	15		brtst 4, __NXC_Label_737, __zfreadL
-9	150	18	#line 150 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	151	18		set __DU0readL, 0
-9	150	21	#line 150 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	150	21	#line 150 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	151	21		subret __readL_return
-9	150	23	#line 150 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	150	23	#line 150 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	151	23	#line 151 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	152	23		set __DU0readL, 1
-9	151	26	#line 151 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	151	26	#line 151 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	152	26		subret __readL_return
-9	151	28	#line 151 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	153	28	#line 153 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-9	154	28		subret __readL_return
-10	154	0	#line 154 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
-10	155	0		subret ____initialize_global_data_return
+2	82	34	#line 82 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+2	84	34	#line 84 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+2	85	34		subret __setup_return
+3	87	0	#line 87 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	88	0		subcall readR, __readR_return
+3	87	2	#line 87 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	88	2		mov __DU0followLine, __DU0readR
+3	88	4	#line 88 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	89	4		tst 5, __zffollowLine, __DU0followLine
+3	88	7	#line 88 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	89	7		brtst 4, __NXC_Label_669, __zffollowLine
+3	88	10	#line 88 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	89	10		mov __motorR_7qG2_power_7qG2_000, __followLine_7qG2_powerB_7qG2_000
+3	88	12	#line 88 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	89	12	#line 89 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	90	12		mov __motorR_7qG2_dir_7qG2_000, __constVal1
+3	89	14	#line 89 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	90	14		subcall motorR, __motorR_return
+3	89	16	#line 89 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	91	16	#line 91 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	92	16		jmp __NXC_Label_672
+3	91	18	#line 91 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	92	18		mov __motorR_7qG2_power_7qG2_000, __followLine_7qG2_powerW_7qG2_000
+3	91	20	#line 91 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	92	20	#line 92 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	93	20		mov __motorR_7qG2_dir_7qG2_000, __constVal1
+3	92	22	#line 92 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	93	22		subcall motorR, __motorR_return
+3	92	24	#line 92 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	95	24	#line 95 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	95	24	#line 95 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	96	24		subcall readL, __readL_return
+3	95	26	#line 95 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	96	26		mov __DU0followLine, __DU0readL
+3	96	28	#line 96 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	97	28		tst 5, __zffollowLine, __DU0followLine
+3	96	31	#line 96 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	97	31		brtst 4, __NXC_Label_677, __zffollowLine
+3	96	34	#line 96 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	97	34		mov __motorL_7qG2_power_7qG2_000, __followLine_7qG2_powerB_7qG2_000
+3	96	36	#line 96 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	97	36	#line 97 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	98	36		mov __motorL_7qG2_dir_7qG2_000, __constVal1
+3	97	38	#line 97 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	98	38		subcall motorL, __motorL_return
+3	97	40	#line 97 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	99	40	#line 99 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	100	40		jmp __NXC_Label_680
+3	99	42	#line 99 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	100	42		mov __motorL_7qG2_power_7qG2_000, __followLine_7qG2_powerW_7qG2_000
+3	99	44	#line 99 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	100	44	#line 100 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	101	44		mov __motorL_7qG2_dir_7qG2_000, __constVal1
+3	100	46	#line 100 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	101	46		subcall motorL, __motorL_return
+3	100	48	#line 100 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	104	48	#line 104 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	104	48	#line 104 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+3	105	48		subret __followLine_return
+4	107	0	#line 107 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	108	0		mov __signed_stack_001motorR, __motorR_7qG2_power_7qG2_000
+4	107	2	#line 107 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	108	2	#line 108 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	109	2		set __D0motorR, 100
+4	108	5	#line 108 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	109	5		cmp 1, __zfmotorR, __signed_stack_001motorR, __D0motorR
+4	108	9	#line 108 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	109	9		mov __D0motorR, __zfmotorR
+4	108	11	#line 108 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	109	11		brtst 4, __NXC_Label_685, __zfmotorR
+4	110	14	#line 110 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	111	14		set __motorR_7qG2_power_7qG2_000, 100
+4	110	17	#line 110 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	110	17	#line 110 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	110	17	#line 110 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	110	17	#line 110 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	111	17		mov __signed_stack_001motorR, __motorR_7qG2_power_7qG2_000
+4	110	19	#line 110 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	111	19	#line 111 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	112	19		set __D0motorR, 0
+4	111	22	#line 111 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	112	22		cmp 0, __zfmotorR, __signed_stack_001motorR, __D0motorR
+4	111	26	#line 111 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	112	26		mov __D0motorR, __zfmotorR
+4	111	28	#line 111 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	112	28		brtst 4, __NXC_Label_690, __zfmotorR
+4	114	31	#line 114 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	115	31		set __motorR_7qG2_power_7qG2_000, 0
+4	114	34	#line 114 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	114	34	#line 114 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	114	34	#line 114 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	114	34	#line 114 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	115	34		mov __signed_stack_001motorR, __motorR_7qG2_power_7qG2_000
+4	114	36	#line 114 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	115	36	#line 115 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	116	36		set __D0motorR, 0
+4	115	39	#line 115 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	116	39		cmp 4, __zfmotorR, __signed_stack_001motorR, __D0motorR
+4	115	43	#line 115 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	116	43		mov __D0motorR, __zfmotorR
+4	115	45	#line 115 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	116	45		brtst 4, __NXC_Label_695, __zfmotorR
+4	116	48	#line 116 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	117	48	#pragma macro 7
+4	117	48		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	6913	71	#line 6913 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	116	71	#line 116 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	116	71	#line 116 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	117	71		jmp __NXC_Label_696
+4	116	73	#line 116 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	117	73		mov __unsigned_stack_001motorR, __motorR_7qG2_dir_7qG2_000
+4	116	75	#line 116 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	117	75	#line 117 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	118	75		set __D0motorR, 0
+4	117	78	#line 117 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	118	78		cmp 4, __zfmotorR, __unsigned_stack_001motorR, __D0motorR
+4	117	82	#line 117 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	118	82		mov __D0motorR, __zfmotorR
+4	117	84	#line 117 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	118	84		brtst 4, __NXC_Label_699, __zfmotorR
+4	117	87	#line 117 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	118	87		mov __D0motorR, __motorR_7qG2_power_7qG2_000
+4	118	89	#line 118 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	119	89	#pragma macro 10
+4	119	89		acquire __OnRevMutex
+4	119	90		neg __OnRev_Tmp, __D0motorR
+4	119	93		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	119	116		release __OnRevMutex
+4	6937	117	#line 6937 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	118	117	#line 118 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	119	117	#line 119 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	120	117		jmp __NXC_Label_702
+4	119	119	#line 119 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	120	119		mov __D0motorR, __motorR_7qG2_power_7qG2_000
+4	120	121	#line 120 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	121	121	#pragma macro 7
+4	121	121		setout __constVal0, 2, __D0motorR, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	6947	144	#line 6947 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	120	144	#line 120 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	120	144	#line 120 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	120	144	#line 120 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	122	144	#line 122 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+4	123	144		subret __motorR_return
+5	125	0	#line 125 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	126	0		mov __signed_stack_001motorL, __motorL_7qG2_power_7qG2_000
+5	125	2	#line 125 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	126	2	#line 126 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	127	2		set __D0motorL, 100
+5	126	5	#line 126 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	127	5		cmp 1, __zfmotorL, __signed_stack_001motorL, __D0motorL
+5	126	9	#line 126 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	127	9		mov __D0motorL, __zfmotorL
+5	126	11	#line 126 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	127	11		brtst 4, __NXC_Label_707, __zfmotorL
+5	128	14	#line 128 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	129	14		set __motorL_7qG2_power_7qG2_000, 100
+5	128	17	#line 128 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	128	17	#line 128 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	128	17	#line 128 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	128	17	#line 128 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	129	17		mov __signed_stack_001motorL, __motorL_7qG2_power_7qG2_000
+5	128	19	#line 128 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	129	19	#line 129 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	130	19		set __D0motorL, 0
+5	129	22	#line 129 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	130	22		cmp 0, __zfmotorL, __signed_stack_001motorL, __D0motorL
+5	129	26	#line 129 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	130	26		mov __D0motorL, __zfmotorL
+5	129	28	#line 129 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	130	28		brtst 4, __NXC_Label_712, __zfmotorL
+5	132	31	#line 132 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	133	31		set __motorL_7qG2_power_7qG2_000, 0
+5	132	34	#line 132 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	132	34	#line 132 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	132	34	#line 132 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	132	34	#line 132 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	133	34		mov __signed_stack_001motorL, __motorL_7qG2_power_7qG2_000
+5	132	36	#line 132 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	133	36	#line 133 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	134	36		set __D0motorL, 0
+5	133	39	#line 133 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	134	39		cmp 4, __zfmotorL, __signed_stack_001motorL, __D0motorL
+5	133	43	#line 133 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	134	43		mov __D0motorL, __zfmotorL
+5	133	45	#line 133 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	134	45		brtst 4, __NXC_Label_717, __zfmotorL
+5	134	48	#line 134 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	135	48	#pragma macro 7
+5	135	48		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7019	71	#line 7019 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	134	71	#line 134 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	134	71	#line 134 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	135	71		jmp __NXC_Label_718
+5	134	73	#line 134 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	135	73		mov __unsigned_stack_001motorL, __motorL_7qG2_dir_7qG2_000
+5	134	75	#line 134 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	135	75	#line 135 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	136	75		set __D0motorL, 0
+5	135	78	#line 135 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	136	78		cmp 4, __zfmotorL, __unsigned_stack_001motorL, __D0motorL
+5	135	82	#line 135 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	136	82		mov __D0motorL, __zfmotorL
+5	135	84	#line 135 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	136	84		brtst 4, __NXC_Label_721, __zfmotorL
+5	135	87	#line 135 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	136	87		mov __D0motorL, __motorL_7qG2_power_7qG2_000
+5	136	89	#line 136 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	137	89	#pragma macro 10
+5	137	89		acquire __OnRevMutex
+5	137	90		neg __OnRev_Tmp, __D0motorL
+5	137	93		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	137	116		release __OnRevMutex
+5	7043	117	#line 7043 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	136	117	#line 136 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	137	117	#line 137 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	138	117		jmp __NXC_Label_724
+5	137	119	#line 137 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	138	119		mov __D0motorL, __motorL_7qG2_power_7qG2_000
+5	138	121	#line 138 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	139	121	#pragma macro 7
+5	139	121		setout __constVal1, 2, __D0motorL, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7053	144	#line 7053 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	138	144	#line 138 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	138	144	#line 138 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	138	144	#line 138 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	140	144	#line 140 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+5	141	144		subret __motorL_return
+6	141	0	#line 141 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	142	0		mov __motorR_7qG2_power_7qG2_000, __goStraight_7qG2_power_7qG2_000
+6	141	2	#line 141 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	142	2	#line 142 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	143	2		mov __motorR_7qG2_dir_7qG2_000, __constVal1
+6	142	4	#line 142 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	143	4		subcall motorR, __motorR_return
+6	142	6	#line 142 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	142	6	#line 142 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	143	6		mov __motorL_7qG2_power_7qG2_000, __goStraight_7qG2_power_7qG2_000
+6	142	8	#line 142 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	143	8	#line 143 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	144	8		mov __motorL_7qG2_dir_7qG2_000, __constVal1
+6	143	10	#line 143 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	144	10		subcall motorL, __motorL_return
+6	143	12	#line 143 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	145	12	#line 145 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+6	146	12		subret __goStraight_return
+7	146	0	#line 146 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	147	0		mov __motorR_7qG2_power_7qG2_000, __turnR_7qG2_power_7qG2_000
+7	146	2	#line 146 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	146	2	#line 146 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	147	2		set __motorR_7qG2_dir_7qG2_000, 0
+7	146	5	#line 146 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	147	5	#line 147 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	148	5		subcall motorR, __motorR_return
+7	147	7	#line 147 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	147	7	#line 147 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	148	7		mov __motorL_7qG2_power_7qG2_000, __turnR_7qG2_power_7qG2_000
+7	147	9	#line 147 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	148	9	#line 148 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	149	9		mov __motorL_7qG2_dir_7qG2_000, __constVal1
+7	148	11	#line 148 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	149	11		subcall motorL, __motorL_return
+7	148	13	#line 148 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	150	13	#line 150 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+7	151	13		subret __turnR_return
+8	151	0	#line 151 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	152	0		getin __readR_7qG2_value_7qG2_000, __constVal0, 4
+8	151	4	#line 151 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	153	4	#line 153 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	154	4		mov __signed_stack_001readR, __readR_7qG2_value_7qG2_000
+8	153	6	#line 153 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	154	6	#line 154 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	155	6		set __D0readR, 25
+8	154	9	#line 154 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	155	9		cmp 1, __zfreadR, __signed_stack_001readR, __D0readR
+8	154	13	#line 154 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	155	13		mov __D0readR, __zfreadR
+8	154	15	#line 154 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	155	15		brtst 4, __NXC_Label_741, __zfreadR
+8	155	18	#line 155 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	156	18		set __DU0readR, 0
+8	155	21	#line 155 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	155	21	#line 155 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	156	21		subret __readR_return
+8	155	23	#line 155 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	155	23	#line 155 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	156	23	#line 156 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	157	23		set __DU0readR, 1
+8	156	26	#line 156 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	156	26	#line 156 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	157	26		subret __readR_return
+8	156	28	#line 156 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	158	28	#line 158 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+8	159	28		subret __readR_return
+9	159	0	#line 159 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	160	0		getin __readL_7qG2_value_7qG2_000, __constVal1, 4
+9	159	4	#line 159 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	161	4	#line 161 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	162	4		mov __signed_stack_001readL, __readL_7qG2_value_7qG2_000
+9	161	6	#line 161 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	162	6	#line 162 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	163	6		set __D0readL, 25
+9	162	9	#line 162 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	163	9		cmp 1, __zfreadL, __signed_stack_001readL, __D0readL
+9	162	13	#line 162 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	163	13		mov __D0readL, __zfreadL
+9	162	15	#line 162 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	163	15		brtst 4, __NXC_Label_750, __zfreadL
+9	163	18	#line 163 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	164	18		set __DU0readL, 0
+9	163	21	#line 163 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	163	21	#line 163 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	164	21		subret __readL_return
+9	163	23	#line 163 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	163	23	#line 163 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	164	23	#line 164 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	165	23		set __DU0readL, 1
+9	164	26	#line 164 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	164	26	#line 164 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	165	26		subret __readL_return
+9	164	28	#line 164 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	166	28	#line 166 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+9	167	28		subret __readL_return
+10	167	0	#line 167 "C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc"
+10	168	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
-1	__ResetSensorSubroutine	155	NXTDefs.h
-2	setup	168	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
-3	followLine	204	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
-4	motorR	246	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
-5	motorL	392	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
-6	goStraight	538	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
-7	turnR	548	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
-8	readR	560	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
-9	readL	590	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
-10	__initialize_global_data	620	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
+1	__ResetSensorSubroutine	193	NXTDefs.h
+2	setup	206	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
+3	followLine	242	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
+4	motorR	292	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
+5	motorL	438	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
+6	goStraight	584	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
+7	turnR	598	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
+8	readR	613	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
+9	readL	643	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
+10	__initialize_global_data	673	C:\Users\black_000\Desktop\AI\Robot code\RobotProgram.nxc
