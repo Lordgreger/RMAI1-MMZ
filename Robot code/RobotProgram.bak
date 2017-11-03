@@ -2,19 +2,20 @@
 void setup();
 
 // Sensor reading
-int sensorThresh = 15;
+int sensorThresh = 50;
 bool readR(); // Returns true if sensor is on black
 bool readL();
 
 // Motor control
 void motorR(char power, bool dir = true);
 void motorL(char power, bool dir = true);
-void goStraight(char power);
+void goStraight(char power, bool dir = true);
 void turnR(char power);
 void turnL(char power);
 
 // Line following;
 void followLine(char powerW, char powerB);
+void followLineBack(char powerW, char powerB);
 
 task main() {
     // Init of values
@@ -23,21 +24,22 @@ task main() {
     int commandI = 0; // Command iterator
     //int commandS = 32; // Command size
     //int commands[] = {2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3};
-    int commandS = 2; // Command size
-    int commands[] = {2, 3};
+    int commandS = 1; // Command size
+    int commands[] = {2, 4};
     
     // Speed control
     int maxSpeed = 100;
     int minSpeed = 10;
     
     // Extra control
-    int turnCount = 600;
-    int forwardCount = 100;
+    int turnCount = 500;
+    int forwardCount = 150;
     
     // Commands
     // 2 = Follow line
     // 3 = Turn right
-    // 4 = Tunr left
+    // 4 = Turn left
+    // 5 = Push can forward and go back
     
     while(true) {
 
@@ -56,8 +58,10 @@ task main() {
                             state = commands[commandI];
                             commandI++;
                         }
-                        else
-                            Stop(true);
+                        else {
+                            //commandI = 0; // Repeat command set
+                            Stop(true); // Stop when done with command set
+                        }
                         break;
 
                 // Segment for following a line
@@ -65,11 +69,11 @@ task main() {
                         followLine(maxSpeed, minSpeed);
                         if (readR() && readL()) {
                             counter1 = forwardCount; // Used for the step
-                            state = 22;
+                            state = 21;
                         }
                         break;
 
-                case 22: // Take small step forward
+                case 21: // Take small step forward
                         counter1 = counter1 - 1;
                         goStraight(maxSpeed);
                         if (counter1 < 1) {
@@ -82,11 +86,11 @@ task main() {
                         turnR(maxSpeed);
                         if (readR()) {
                             counter1 = turnCount;
-                            state = 33;
+                            state = 31;
                         }
                         break;
                         
-                case 33: // Turn a bit more to position better
+                case 31: // Turn a bit more to position better
                         counter1 = counter1 - 1;
                         if (counter1 < 1) {
                             state = 1;
@@ -96,11 +100,37 @@ task main() {
                 // Segment for turning left
                 case 4: // Turn left
                         turnL(maxSpeed);
-                        if (readR()) {
+                        if (readL()) {
                             counter1 = turnCount;
-                            state = 33; // Reuse state since redundant
+                            state = 31; // Reuse state since redundant
                         }
                         break;
+                        
+                // Segment for pushing can
+                case 5: // Go forward
+                        followLine(maxSpeed, minSpeed);
+                        if (readR() && readL()) {
+                            counter1 = forwardCount; // Used for the step
+                            state = 51;
+                        }
+                        break;
+
+                case 51: // Backup a bit
+                        counter1 = counter1 - 1;
+                        goStraight(maxSpeed, false);
+                        if (counter1 < 1) {
+                            state = 52;
+                        }
+                        break;
+                        
+                case 52: // Go backwards
+                        followLineBack(maxSpeed, maxSpeed - 20);
+                        if (readR() && readL()) {
+                            counter1 = forwardCount; // Used for the step
+                            state = 21; // reuse
+                        }
+                        break;
+
 
                 // Stopping state for debugging
                 case 987: // Stop
@@ -116,10 +146,10 @@ task main() {
 
 void setup() {
     // Set sensorR to be light sensor
-    SetSensor(S1, SENSOR_LIGHT);
+    SetSensor(S1, SENSOR_NXTLIGHT);
     
     // Set sensorL to be light sensor
-    SetSensor(S2, SENSOR_LIGHT);
+    SetSensor(S2, SENSOR_NXTLIGHT);
 }
 
 void followLine(char powerW, char powerB) {
@@ -140,6 +170,26 @@ void followLine(char powerW, char powerB) {
             motorL(powerW);
         }
         
+}
+
+void followLineBack(char powerW, char powerB) {
+
+        // motorR
+        if (readR()) {
+            motorR(powerB, false);
+        }
+        else {
+            motorR(powerW, false);
+        }
+
+        // motorL
+        if (readL()) {
+            motorL(powerB, false);
+        }
+        else {
+            motorL(powerW, false);
+        }
+
 }
 
 void motorR(char power, bool dir) {
@@ -178,9 +228,15 @@ void motorL(char power, bool dir) {
         OnFwd(OUT_B, power);
 }
 
-void goStraight(char power) {
-    motorR(power);
-    motorL(power);
+void goStraight(char power, bool dir) {
+    if (dir == true) {
+        motorR(power);
+        motorL(power);
+    } else {
+        motorR(power, false);
+        motorL(power, false);
+    }
+    
 }
 
 void turnR(char power) {
