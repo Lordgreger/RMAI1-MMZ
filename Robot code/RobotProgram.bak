@@ -2,7 +2,7 @@
 void setup();
 
 // Sensor reading
-int sensorThresh = 50;
+int sensorThresh = 56;
 bool readR(); // Returns true if sensor is on black
 bool readL();
 
@@ -22,18 +22,22 @@ task main() {
     int state = 0; // State for the state machine
     int counter1 = 0; // Counter value holder
     int commandI = 0; // Command iterator
-    //int commandS = 32; // Command size
-    //int commands[] = {2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3};
-    int commandS = 1; // Command size
-    int commands[] = {2, 4};
+    int commandS = 15; // Command size
+    int commands[] = {2, 2, 5, 3, 2, 4, 2, 5, 4, 2, 4, 2, 4, 2, 5};;
+    //int commandS = 1; // Command size
+    //int commands[] = {5};
     
     // Speed control
-    int maxSpeed = 100;
-    int minSpeed = 10;
+    int maxSpeed = 100; // 100
+    int minSpeed = 20; // 30
+    int maxSpeedBack = 30;
+    int minSpeedBack = 27;
     
     // Extra control
-    int turnCount = 500;
-    int forwardCount = 150;
+    int turnCount = 100; // 70 or 0
+    int forwardCount = 150; // 80
+    int pushForwardCount = 630; // 600
+    int goBackCount = 265; // 300
     
     // Commands
     // 2 = Follow line
@@ -82,15 +86,29 @@ task main() {
                         break;
                         
                 // Segment for turning right
-                case 3: // Turn right
+                
+                case 3: // Turn right init
                         turnR(maxSpeed);
-                        if (readR()) {
-                            counter1 = turnCount;
-                            state = 31;
+                        state = 31;
+                        counter1 = turnCount;
+                        break;
+                        
+                case 31: // Turn a bit to position better
+                        counter1 = counter1 - 1;
+                        if (counter1 < 1) {
+                            state = 32;
                         }
                         break;
                         
-                case 31: // Turn a bit more to position better
+                case 32: // Turn right
+                        turnR(maxSpeed);
+                        if (readR()) {
+                            counter1 = turnCount*2;
+                            state = 33;
+                        }
+                        break;
+                        
+                case 33: // Turn a bit more to position better
                         counter1 = counter1 - 1;
                         if (counter1 < 1) {
                             state = 1;
@@ -98,19 +116,47 @@ task main() {
                         break;
                         
                 // Segment for turning left
-                case 4: // Turn left
+                case 4: // Turn left init
+                        turnL(maxSpeed);
+                        state = 41;
+                        counter1 = turnCount*2;
+                        break;
+
+                case 41: // Turn a bit to position better
+                        counter1 = counter1 - 1;
+                        if (counter1 < 1) {
+                            state = 42;
+                        }
+                        break;
+
+                case 42: // Turn L
                         turnL(maxSpeed);
                         if (readL()) {
                             counter1 = turnCount;
-                            state = 31; // Reuse state since redundant
+                            state = 43;
+                        }
+                        break;
+
+                case 43: // Turn a bit more to position better
+                        counter1 = counter1 - 1;
+                        if (counter1 < 1) {
+                            state = 1;
                         }
                         break;
                         
                 // Segment for pushing can
-                case 5: // Go forward
-                        followLine(maxSpeed, minSpeed);
-                        if (readR() && readL()) {
-                            counter1 = forwardCount; // Used for the step
+                
+                case 5: // Push init
+                        state = 599;
+                        counter1 = pushForwardCount;
+                        break;
+                
+                case 599: // Go forward
+                        //followLine(maxSpeed, minSpeed);
+                        goStraight(maxSpeed);
+                        counter1 = counter1 - 1;
+                        if (counter1 < 1) {
+                            counter1 = goBackCount;
                             state = 51;
                         }
                         break;
@@ -119,17 +165,36 @@ task main() {
                         counter1 = counter1 - 1;
                         goStraight(maxSpeed, false);
                         if (counter1 < 1) {
-                            state = 52;
+                            state = 521; // Turn around right
+                            if (readR()) {
+                                state = 522; // Turn around left
+                            }
                         }
                         break;
                         
-                case 52: // Go backwards
-                        followLineBack(maxSpeed, maxSpeed - 20);
-                        if (readR() && readL()) {
-                            counter1 = forwardCount; // Used for the step
-                            state = 21; // reuse
+                case 521: // Turn around right
+                        turnR(maxSpeed);
+                        if (readR()) {
+                            counter1 = turnCount*3;
+                            state = 53;
                         }
                         break;
+                        
+                case 522: // Turn around left
+                        turnL(maxSpeed);
+                        if (readL()) {
+                            counter1 = turnCount*3;
+                            state = 53;
+                        }
+                        break;
+                        
+                case 53: // Turn a bit more to position better
+                        counter1 = counter1 - 1;
+                        if (counter1 < 1) {
+                            state = 2; // reuse follow line
+                        }
+                        break;
+
 
 
                 // Stopping state for debugging
